@@ -31,7 +31,7 @@ FlyingMonkey.prototype.fly = function () {
 
 var FlyingMonkey = function (name, color, wingspan) {
     //    Monkey.call(this, name, color, wingspan);
-    console.log(this);
+    //    console.log(this);
     Monkey.apply(this, arguments)
     console.log(this);
 }
