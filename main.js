@@ -30,12 +30,14 @@ FlyingMonkey.prototype.fly = function () {
 
 
 var FlyingMonkey = function (name, color, wingspan) {
-    //    Monkey.call(this, name, color, wingspan);
+    Monkey.call(this, name, color, wingspan);
     //    console.log(this);
-    Monkey.apply(this, arguments)
+    //    Monkey.apply(this, arguments);
+    this.wingspan = wingspan;
     console.log(this);
 }
 
+FlyingMonkey.prototype = Monkey.prototype;
 
 var evilGeorge = new FlyingMonkey('EvilGeorge', 'black', 150)
 
